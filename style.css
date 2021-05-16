@@ -1,0 +1,679 @@
+
+.a{
+    display:inline-block;
+    text-align: center;
+    border:2px solid rgb(8, 8, 8);
+    background-color: rgb(219, 37, 37);
+    font-size:21px;
+    height: 75px;
+    z-index: 1;
+}
+.ab
+{
+    position: fixed;
+    left:0%;
+    width:10%;
+}
+.b
+{
+    width:18%;
+    position: fixed;
+    left:10%;
+}
+.c
+{
+    width:18%;
+    position: fixed;
+    left:28%;
+}
+.d
+{
+    width:18%;
+    position: fixed;
+    left:46%;
+}
+.e
+{
+    width:18%;
+    position: fixed;
+    left:64%;
+}
+.f
+{
+    width:18%;
+    position: fixed;
+    left:82%;
+}
+.g{
+    padding-top: 25px;
+    height: 50px;
+}
+.navbar{
+    z-index: 999;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+.navbar:hover{
+    color:rgb(113, 173, 52);
+    text-decoration: underline;
+}
+.navbar a:focus
+{
+    transition: 0.5s;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+}
+.box1
+{
+    flex-grow: 1;
+    position: relative;
+    top: 75px;
+    border: 2px solid black;
+    width:45%;
+}
+.box2
+{
+    background-image: url(backgroundimage.jpg);
+    background-size: cover;
+    flex-grow: 1;
+    position: relative;
+    top: 75px;
+    border: 2px solid black;
+    width:45%;
+}
+.heading
+{
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    position: relative;
+    top:20%;
+    color:rgba(218, 125, 5, 0.884)
+}
+.subtitle
+{
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top:20%;
+    color:rgba(118, 160, 240, 0.884);
+}
+.bredes
+{
+    width:70%;
+    display:inline-block;
+    text-align: center;
+    position: relative;
+    top:20%;
+    left:20%;
+    color:rgba(238, 0, 167, 0.856);
+}
+.button
+{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left:44%;
+    background-color:rgba(120, 2, 255, 0.856);
+    color: white;
+    padding: 5px;
+}
+.dark-mode{
+    width:100%;
+    height:fit-content;
+    background-color: grey;
+}
+.light-mode{
+    width:100%;
+    height:fit-content;
+    background-color: white;
+}
+header
+{
+    border: 2px solid black;
+}
+.shead
+{
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    position: relative;
+    top:40px;
+}
+.flex-container1
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:50px;
+    left:10%;
+}
+.flex-container2, .rflex-container1, .rflex-container2, .rflex-container3
+{
+    display: flex;
+    flex-direction: row;
+}
+.flex-container3
+{
+    display: flex;
+    flex-direction: row;
+}
+.two
+{
+    background-color: white;
+    width:25%;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.one
+{
+    background-color: white;
+    width:25%;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.flex-container2 div div p, .flex-container3 div div p, .rflex-container1 div div p, .rflex-container2 div div p, .rflex-container3 div div p
+{
+    width: 100%;
+    color:black;
+    font-size:10px;
+    text-align: center;
+
+}
+.two
+{
+    position: relative;
+    left:25%;
+}
+.one
+{
+    position: relative;
+    left:5%;
+}
+.abcd{
+    position: relative;
+    bottom: 15%;
+    padding: 3px 5px;
+    border-radius: 100px;
+    background-color: blue;
+    color: white;
+}
+.defg
+{
+    opacity: 0;
+    position: relative;
+    bottom: 15%;
+}
+.card
+{
+    width:100%;
+    max-height: fit-content;
+}
+.card:hover p, .rcard:hover p
+{
+    opacity: 1;
+    font-size: 20px;
+    position: relative;
+    bottom: 200px;
+}
+.card input, .rcard input
+{
+    opacity: 0;
+}
+.card:hover img, .rcard:hover img
+{
+    opacity: 0;
+}
+.card:hover h2,.rcard:hover h2
+{
+    opacity: 0;
+}
+.card:hover h3, .rcard:hover h3
+{
+    opacity: 0;
+}
+.card:hover .abcd, .rcard:hover .abcd
+{
+    position: relative;
+    bottom: 15%;
+    opacity: 1;
+    padding: 3px 5px;
+    border-radius: 100px;
+    background-color: blue;
+    color: white;
+}
+.addbutton:checked ~.abcd{
+    opacity:0;
+}
+.addbutton:checked ~.defg{
+    opacity:1;
+    left: -8%;
+    padding: 3px 5px;
+    border-radius: 100px;
+    background-color: blue;
+    color: white;
+}
+.card:hover
+{
+    height: fit-content;
+    animation-name: rotater;
+    animation-duration: 1s;
+}
+.rcard:hover
+{
+    animation-name: rotater;
+    animation-duration: 1s;
+}
+.rflex-container
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:50px;
+}
+.rcard
+{
+    width:75%;
+    max-height: fit-content;
+    position: relative;
+    left:12.5%;
+    background-color: white;
+}
+.description
+{
+    text-align: center;
+    position: relative;
+    top:10px;
+}
+textarea
+{
+    width:"300px";
+    height:"20px";
+    position: relative;
+    left:10%;
+}
+.discount
+{
+    font-size: 15px;
+}
+.card:hover ~.discount
+{
+    opacity: 0;
+}
+.rcard:hover ~.discount
+{
+    opacity: 0;
+}
+.review-flex-container
+{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+}
+.review-card img
+{display: table-cell;
+    height: 300px;
+    width:100%;
+}
+.review-card p
+{
+    display: table-cell;
+    vertical-align: top;
+    width:50%;
+    text-align: left;
+    position: relative;
+    left: 0%;
+}
+.review-card
+{
+
+    display: table-row;
+    border:2px solid black;
+    transition: all 0.5s;
+}
+.review-form
+{
+    width: 30%;
+    position:relative;
+    left:10%;
+    font-size: 20px;
+}
+.abox img
+{
+    width: 200px;
+    height:200px;
+}
+.abox
+{
+    position: relative;
+    left:5%;
+    top:50px;
+    width:50%;
+    transition: all 1s;
+}
+textarea
+{
+    height: 20px;
+    position: relative;
+    left: 1%;
+    top: 5px;
+}
+.copyright
+{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.13);
+    position: relative;
+    top:50px;
+    
+}
+#submit
+{
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+@keyframes
+rotater
+{
+    0%{opacity:0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;
+    transform: rotateY(359deg);}
+}
+.review-card:hover
+{
+    transform: scaleY(2);
+    background-color: rgba(0, 0, 0, 0.185);
+}
+.copyclass:hover
+{
+ text-decoration: underline;
+}
+textarea:focus
+{
+    width: 60%;
+    height:auto;
+    border: 4px solid blue;
+}
+.form
+{
+    background-color: white;
+    clip-path: polygon(5% 0,65% 0,45% 50%,65% 100%,5% 100%);
+}
+.abox img:hover
+{
+    transition: all 1s;
+    position: relative;
+    bottom:5vh;
+    animation-name: rotaterz;
+    animation-duration: 1s;
+}
+@keyframes
+rotaterz
+{
+    0%{opacity: 1;}
+    100%{transform: rotateZ(359.9deg);
+        opacity: 1;}
+}
+.knowbutton
+{
+    opacity: 0;
+    background-color: blue;
+    color:black;
+    border: 2px solid black;
+    border-radius: 3px;
+    position: relative;
+    bottom: 0vh;
+}
+.card:hover .knowbutton
+{
+    opacity: 1;
+}
+.rcard:hover .knowbutton
+{
+    opacity: 1;
+}
+.knowbutton:focus
+{
+    animation: rotater 5765654847467545465465458544858547857854s;
+    opacity: 0;
+}
+.buybutton
+{
+    opacity: 1;
+    background-color: blue;
+    color:black;
+    border: 2px solid black;
+    border-radius: 3px;
+    position: relative;
+    bottom: 10vh;
+    left: 15%;
+}
+.top-buttun
+{
+    text-decoration: none;
+    background-color: blue;
+    color:white;
+    border: 2px solid black;
+    border-radius: 100px;
+    position: relative;
+    top:5vh;
+}
+.hamburger
+{
+    position: fixed;
+    left:95%;
+    z-index: 23;
+    opacity: 0;
+}
+.one .veg-icon
+{
+    z-index: 999;
+    position: relative;
+    left:79%;
+    top: -32vh;
+}
+.two .veg-icon
+{
+    z-index: 999;
+    position: relative;
+    left:79%;
+    top: -30vh;
+}
+.veg-icon1
+{
+    position: relative;
+    bottom: 33vh;
+    left:70%;
+    
+}
+@media screen and (max-width:1500px){
+    .hamburger
+    {
+        opacity: 1;
+    }
+    .flex-container1, .flex-container2, .flex-container3, .rflex-container1, .rflex-container2, .rflex-container3, .review-flex-container
+    {
+        display: block;
+    }
+    .one
+    {
+        position: relative;
+        left: 30%;
+        bottom: 1.5vh;
+    }
+    .two
+    {
+        position: relative;
+        left:30%;
+        top:2vh;
+    }
+    .rcard{
+        width: 25%;
+        position: relative;
+        left:40%;
+    }
+    .rflex-container .buybutton{
+        position:relative;
+        left:50%;
+        bottom: 8vh;
+    }
+    .flex-container1 .buybutton{
+        position:relative;
+        left:35%;
+        bottom: 6vh;
+    }
+    .veg-icon
+    {
+        opacity:0;
+        z-index: 999;
+        position:relative;
+        left:15%;
+        top: 20vh;
+    }
+    .veg-icon1
+    {
+        z-index: 999;
+        position: relative;
+        left:57%;
+        top: -15vh;
+    }
+    .review-card img
+    {
+        height:15vh;
+        width:30%;
+    }
+    .review-card p
+    {
+        position: relative;
+        left:-30%;
+    }
+    .nav
+    {
+        opacity: 0;
+        height: 100vh;
+        z-index: 999;
+        background-color: rgba(255, 0, 0, 0.178);
+    }
+    .nav:target .navbar
+    {
+        opacity: 1;
+        display: block;
+        text-align: center;
+
+    }
+    .nav:target
+    {
+        opacity:1;
+    }
+}
+
+.allsame:hover .veg-icon, .allsame:hover .veg-icon1
+{
+    opacity:0;
+}
+.search
+{
+    z-index: 2000;
+    position: relative;
+    left:-0.75%;
+    top:0.5vh;
+}
+@keyframes
+moveleft
+{
+    0%{opacity:0;
+    transform: translateX(-330px);}
+    50%
+    {opacity: 1;
+    transform: translateX(0);}
+    100%
+    {opacity: 0;
+    transform: translateX(330px);}
+}
+@keyframes
+moveright
+{
+    0%{opacity:0;
+    transform: translateX(330px);}
+    50%
+    {opacity: 1;
+    transform: translateX(0);}
+    100%
+    {opacity: 0;
+    transform: translateX(-11px);}
+}
+@keyframes
+opener
+{
+    0%{opacity: 0;}
+    80%{opacity:0.5}
+    100%{opacity: 1;}
+}
+.heading
+{
+    animation: moveleft 0.5s;
+    animation-fill-mode: backwards;
+}
+.subtitle
+{
+    animation: moveright 0.5s 0.5s;
+    animation-fill-mode: backwards;
+}
+.bredes
+{
+    animation: moveleft 0.5s 1s;
+    animation-fill-mode: backwards;
+}
+.button
+{
+    animation: moveright 0.5s 1.5s;
+    animation-fill-mode: backwards;
+}
+.box1
+{
+    animation: opener 0.5s 2s;
+    animation-fill-mode: backwards;
+}
+.chooser
+{
+    width:100%;
+    height:100vh;
+    background-color: black;
+}
+.choose{
+    display: block;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    top:30vh;
+}
+.choosedark
+{
+    position: relative;
+    background-color: blue;
+    color: black;
+    text-decoration: none;
+    top:35vh;
+    left:35%;
+    border-radius:100px ;
+}
+.chooselight
+{
+    background-color: blue;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top:35vh;
+    left:45%;
+    border-radius:100px ;
+}
